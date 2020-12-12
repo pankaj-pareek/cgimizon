@@ -1,0 +1,17 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+?>
+<?php
+/**
+ * Shopping cart additional info
+ * @var $block \Magento\Framework\View\Element\Template
+ */
+$product = $block->getItem()->getProduct();
+?>
+<?php if ($product->getIsbn()):?>
+ 	<span><?= __('ISBN:').$product->getIsbn(); ?></span>   
+<?php endif; ?>

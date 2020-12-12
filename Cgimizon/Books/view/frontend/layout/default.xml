@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="after.body.start">
+            <container name="custom.customer.bar" as="customCustomerBar" label="Customer Bar" htmlTag="div" htmlClass="customer-bar" before="-">
+                <block class="Magento\Theme\Block\Html\Header" name="custom.customer.name" template="Cgimizon_Books::customer_name.phtml" before="-"/>
+            </container>
+        </referenceContainer>
+    </body>
+</page>
